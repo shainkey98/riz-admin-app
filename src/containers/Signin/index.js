@@ -59,7 +59,7 @@ const Signin = (props) => {
                                 type="password"
                                 onChange={(e) => setPassword(e.target.value)}
                             />
-                            <Button variant="primary" type="submit">
+                            <Button style={{color:"#333333"}} type="submit">
                                 Submit
                             </Button>
                         </Form>
