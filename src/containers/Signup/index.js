@@ -47,10 +47,15 @@ const Signup = (props) => {
   if (auth.authenticate) {
     return <Redirect to={`/`} />;
   }
-
+     
   if (user.loading) {
     return <p>Loading...!</p>;
   }
+  
+  if (auth.authenticate) {
+    return <Redirect to={`/`} />;
+  }
+     
 
   return (
     <Layout>
